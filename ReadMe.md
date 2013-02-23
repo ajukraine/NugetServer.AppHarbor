@@ -69,3 +69,4 @@ You are able to access my testing purpose installation - [http://nuget-gallery.a
 - Bug [#11](https://github.com/trilobyte/Premotion-AspNet-AppHarbor-Integration/issues/11) at Premotion-AspNet-AppHarbor-Integration tracker :: **X-NuGet-ApiKey** header is lost
 - Issue [#7148](http://support.appharbor.com/discussions/problems/7148-custom-headers-are-changedlost) at AppHarbor support :: Custom Headers are changed/lost
 - [AppHarbor's load balanacer infromation](http://support.appharbor.com/kb/getting-started/information-about-our-load-balancer)
+- [One more HoWTo](http://andrey.moveax.ru/post/nuget-creating-and-deploying-simple-server.aspx) of installing NuGet server ( *in russian*)
