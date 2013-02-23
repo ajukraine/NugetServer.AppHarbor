@@ -2,7 +2,7 @@
 
 This repository is an example of fully and correctly working [NuGet](http://nuget.org/packages/NuGet.Server/ "NuGet") server, deployed with [AppHarbor](https://appharbor.com/ "AppHarbor") [PaaS](http://en.wikipedia.org/wiki/Platform_as_a_service "PaaS").
 
-It is not possible to setup NuGet server at AppHarbor out of the box (at least, at the time of first commit to this repo). There are several obstacles, caused by the nature the of AppHarbor platform.
+It is not possible to setup NuGet server at AppHarbor out of the box (at least, at the time of first commit to this repo). There are several obstacles, caused by the nature the of AppHarbor platform. Keep reading next section to perform succesfull setup.
 
 ## Installation
 
