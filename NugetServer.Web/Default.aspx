@@ -29,7 +29,7 @@
             <% } %>
             <blockquote>
                 <strong>nuget push {package file} -s <%= Helpers.GetPushUrl(Request.Url, Request.ApplicationPath) %> {apikey}</strong>
-            </blockquote>            
+            </blockquote>
         </fieldset>
 
         <% if (Request.IsLocal) { %>
