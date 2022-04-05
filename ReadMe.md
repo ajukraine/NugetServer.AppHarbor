@@ -8,19 +8,19 @@ It is not possible to setup NuGet server at AppHarbor out of the box (at least, 
 
 You may choose one of the following ways to install NuGet server. They lead you to the same final result.
 
-#### Quick
+### Quick
 
-If you want to setup NuGet server right away, please be free to fork (or clone) the repository and link it with you AppHarbor application.
+If you want to setup NuGet server right away, please feel free to fork (or clone) the repository and link it with you AppHarbor application.
 
-#### Explained
+### Explained
 
 The solution was reached by following these steps:
 
 1. Create blank Visual Studio solution (I'm using VS 2010)
 2. Create "ASP.NET Empty Web Application" project under the solution
 3. Install "Nuget.Server" package, using Nuget command line or package manager
-4. Enable "NuGet package restore" through solution's context menu under
-5. Now we need to fix first problem. NuGet server's WCF service is not working without following modifications to Web.config. Please be sure to add them:
+4. Enable "NuGet package restore" through solution's context menu
+5. Now we need to **fix first problem**. NuGet server's WCF service is not working without following modifications to Web.config. Please make sure to add them:
 	```xml
 	<system.serviceModel>
 			<serviceHostingEnvironment multipleSiteBindingsEnabled="true" />
@@ -46,7 +46,7 @@ More details are available at AppHarbor knowledge base [page](http://support.app
 	```xml
 	<add key="packagesPath" value="~/App_Data/Packages" />
 	```
-9. This step is optional. But I recommend you to follow it too. Do you remember file structure, that we achieved so far? Let's place appropriate *.gitgnore* files to leave binaries and logs outside version control:
+9. This step is optional. But I recommend you to follow it too. Do you remember file structure, that we achieved so far? Let's place appropriate *.gitgnore* files to put binaries and logs outside of version control:
 	- NugetServer.AppHarbor
 		- ...
 		- **.gitignore** (ignore *App_Data*)
